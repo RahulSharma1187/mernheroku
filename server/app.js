@@ -15,7 +15,7 @@ app.use(express.json());
 //we link the router files to make our route easy
 app.use(require('./router/auth'));
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 
 //middleware
 
@@ -37,6 +37,11 @@ app.get('/signin', (req, res) => {
 app.get('/signup', (req, res) => {
     res.send('Registration from the server');
 });
+
+
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static("client/build"));
+}
 
 app.listen(PORT, () => {
     console.log(`successfully ${PORT}`);
