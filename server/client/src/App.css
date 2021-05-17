@@ -1,0 +1,61 @@
+textarea:focus, 
+input:focus{
+    outline: none;
+    border: none;
+}
+.signup,
+.sign-in {
+    width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #ccc;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"]{
+    border: none;
+    background: none;
+}
+.register-form input,
+.signin-form input{
+    margin-left: 10px;
+}
+.register-form .form-group,
+.signin-form .form-group{
+    border-bottom: 1px solid #333;
+}
+.register-form .form-button,
+.signin-form .form-button{
+    border: none;
+}
+.register-form,
+.signin-form {
+    margin-top: 30px;
+}
+
+#contact_form textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#contact_form input{
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notfound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notfound-404{
+    text-align: center;
+}
